@@ -4,6 +4,7 @@ import com.github.hermod.ser.ByteBufferMsgSerializer;
 import com.github.hermod.ser.BytesMsgSerializer;
 import com.github.hermod.ser.Msg;
 import com.github.hermod.ser.impl.AbstractMsgTest;
+import com.github.hermod.ser.impl.DelegateMsgSerializer;
 
 /**
  * KeyObjectMsgTest.
@@ -11,13 +12,13 @@ import com.github.hermod.ser.impl.AbstractMsgTest;
  * @author anavarro - Jan 20, 2013
  * 
  */
-public final class IndexedPrimitivesObjectsMsgTest extends AbstractMsgTest {
+public final class IndexedPrimitivesObjectsHermodMsgTest extends AbstractMsgTest {
 
     /**
      * Constructor.
      * 
      */
-    public IndexedPrimitivesObjectsMsgTest() {
+    public IndexedPrimitivesObjectsHermodMsgTest() {
         super();
     }
 
@@ -38,7 +39,7 @@ public final class IndexedPrimitivesObjectsMsgTest extends AbstractMsgTest {
      */
     @Override
     public BytesMsgSerializer createBytesMsgSerializer() {
-        return new DefaultHermodMsgSerializer();
+        return new DelegateMsgSerializer();
     }
 
     /**
@@ -48,7 +49,7 @@ public final class IndexedPrimitivesObjectsMsgTest extends AbstractMsgTest {
      */
     @Override
     public ByteBufferMsgSerializer createByteBufferMsgSerializer() {
-        return new DefaultHermodMsgSerializer();
+        return new DelegateMsgSerializer();
     }
 
 }

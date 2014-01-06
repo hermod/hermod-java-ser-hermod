@@ -12,13 +12,13 @@ import com.github.hermod.ser.impl.IndexedObjectsMsg;
  * @author anavarro - Jan 20, 2013
  * 
  */
-public final class IndexedObjectsMsgTest extends AbstractMsgTest {
+public final class IndexedObjectsHermodMsgTest extends AbstractMsgTest {
 
     /**
      * Constructor.
      * 
      */
-    public IndexedObjectsMsgTest() {
+    public IndexedObjectsHermodMsgTest() {
         super();
     }
 
